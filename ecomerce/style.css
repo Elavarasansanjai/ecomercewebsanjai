@@ -1,0 +1,629 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "spartan", sans-serif;
+}
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #e1e5ff;
+  box-shadow: 5px 5px 15px rgba(252, 155, 155, 0.6);
+  position: fixed;
+  width: 100%;
+}
+.header h1 {
+  color: #4b4242;
+  font-size: 40px;
+  font-family: cursive;
+}
+.header a {
+  text-decoration: none;
+}
+.header ul {
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  display: flex;
+}
+.header ul li {
+  padding: 0 20px;
+  position: relative;
+}
+.header ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 3s ease;
+}
+.header ul li a:hover,
+.header ul li a.active {
+  color: #12bdb1;
+}
+.header ul li a.active::after,
+.header ul li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #12bdb1;
+  position: absolute;
+  bottom: -5px;
+  left: 20px;
+}
+.hedercontent {
+  padding-left: 15%;
+  padding-top: 22%;
+  background-image: url("./homebackround.image.webp");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.hedercontent h3 {
+  color: #4b4242;
+  font-family: monospace;
+  padding: 20px 0px;
+}
+.black {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.grean {
+  color: rgb(1, 97, 1);
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.hedercontent p {
+  color: #7c7575;
+  font-weight: 600;
+  padding: 20px 0;
+}
+.hedercontent button {
+  margin: 25px 0 0 50px;
+}
+.shopnow {
+  border: none;
+  background-color: none;
+  padding: 10px 5px;
+  background-color: #b8bac5;
+  color: #1a1a1a;
+  font-weight: 100;
+  border-radius: 5px;
+  box-shadow: 2px 5px 10px rgb(69, 102, 158);
+}
+.feature {
+  padding: 40px;
+  display: flex;
+  background-color: rgb(226, 226, 224);
+  flex-wrap: wrap;
+}
+.menus {
+  margin: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: rgb(230, 218, 218);
+  border: 1px solid black;
+  height: 250px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 54px rgba(133, 130, 129, 0.6);
+}
+.menus:hover {
+  box-shadow: 5px 5px 54px rgba(134, 74, 54, 0.6);
+}
+.menus button {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.freechip {
+  background-color: rgb(255, 189, 189);
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 15px #7c7575;
+}
+.buton {
+  text-align: center;
+  justify-content: center;
+}
+.onlineorder {
+  background-color: rgb(162, 233, 162);
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 15px #7c7575;
+}
+.save {
+  background-color: rgb(149, 149, 182);
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 15px #7c7575;
+}
+.promostion {
+  background-color: powderblue;
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 15px #7c7575;
+}
+.happy {
+  background-color: rgb(255, 85, 85);
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 15px #7c7575;
+}
+.suport {
+  background-color: rgb(199, 199, 144);
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 15px #7c7575;
+}
+.feureeprodects {
+  margin-top: 20px;
+  background-color: white;
+}
+.topic {
+  text-align: center;
+}
+.topic h1 {
+  color: #4b4242;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  word-spacing: 2px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.topic h4 {
+  color: #7c7575;
+  font-weight: 3px;
+  word-spacing: 1px;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.dres {
+  margin-top: 30px;
+  background-color: #e1e4ff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 20px;
+}
+.dres p {
+  color: #7c7575;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.dres h5 {
+  color: #1a1a1a;
+  font-family: serif;
+  font-weight: 15px;
+  margin-bottom: 5px;
+}
+.dres button {
+  float: right;
+}
+.amount {
+  margin-top: 10px;
+  color: #4b4242;
+  font-weight: 2px;
+}
+.star {
+  color: rgb(199, 199, 87);
+}
+.row-1 {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.shell {
+  height: 350px;
+  width: 300px;
+  background-color: rgb(206, 206, 206);
+  box-shadow: 5px 5px 15px rgb(126, 120, 120, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.shell img {
+  border-radius: 15px;
+}
+.iner {
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.shell button {
+  position: relative;
+  top: -40px;
+  margin-right: 10px;
+}
+.repair {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.section {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  background-image: url("./section.img");
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+.section h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+}
+.section h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 20px;
+  font-weight: 20px;
+}
+.section h1 span {
+  color: rgb(248, 73, 73);
+}
+.section button {
+  padding: 10px 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+.newarival {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.newarival h1 {
+  text-transform: capitalize;
+  font-family: serif;
+  margin-bottom: 10px;
+  color: #2e2d2d;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.newarival h5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #4b4242;
+  font-family: serif;
+}
+.buy1 {
+  margin: 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.free {
+  margin: 30px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 580px;
+  padding-left: 20px;
+  float: left;
+  background-image: url("./buy1get1\ image.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.free h4 {
+  margin-bottom: 10px;
+  letter-spacing: 1.3px;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 10px;
+}
+.free h1 {
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+.free button {
+  margin-top: 10px;
+  padding: 10px 10px;
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid black;
+  background-color: #e5e6ec;
+}
+.free:hover .buten {
+  color: white;
+  background-color: rgb(22, 109, 22);
+}
+
+.free p {
+  margin-bottom: 10px;
+  letter-spacing: 1.3px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 10px;
+}
+.t {
+  background-image: url("./shoping\ images.jpg");
+}
+.banerelements {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 300px;
+  width: 390px;
+  background-image: url("./banerimg1.jpg");
+  padding-left: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.baner2 {
+  height: 300px;
+  width: 390px;
+  background-image: url("./banerimg2.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.baner3 {
+  background-image: url("./banerimg3.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 390px;
+}
+.banerelements h1 {
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+  color: #e1e4ff;
+}
+.banerelements p {
+  color: rgb(224, 49, 49);
+  margin-bottom: 10px;
+  letter-spacing: 1.3px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 10px;
+}
+.sign {
+  background-image: url("./emailbackround.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.sign h1 {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.sign h4 {
+  color: rgb(190, 185, 185);
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 10px;
+}
+.sign h4 span {
+  color: rgb(202, 183, 12);
+}
+.inp {
+  height: 50px;
+  padding: 10px;
+  color: #4b4242;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.sub {
+  position: relative;
+  left: -5px;
+  background-color: rgb(28, 145, 28);
+  border: none;
+  color: white;
+  height: 50px;
+  padding: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.last {
+  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  justify-content: space-around;
+}
+.caraa {
+  margin: 20px;
+}
+.caraa h1 {
+  font-family: monospace;
+  font-weight: 10px;
+  font-style: italic;
+}
+.caraa h4 {
+  font-size: 20px;
+  color: #1a1a1a;
+}
+.caraa p {
+  color: #4b4242;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 10px;
+}
+.caraa p span {
+  font-size: 15px;
+  color: black;
+  font-weight: 30px;
+}
+.caraa ul {
+  margin-left: 10px;
+  list-style-type: none;
+  margin-top: 10px;
+  display: flex;
+}
+
+.caraa ul li {
+  margin-left: 10px;
+}
+.caraa ul li a {
+  font-size: 30px;
+  color: black;
+}
+.downlode {
+  display: flex;
+  margin-left: 10px;
+  flex-wrap: wrap;
+}
+.app {
+  margin-top: 10px;
+  height: 100px;
+  width: 200px;
+  display: flex;
+  margin-left: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  align-items: center;
+}
+.app p {
+  margin-left: 0;
+}
+.app h1 {
+  margin-left: 10px;
+}
+.on {
+  margin-left: 10px;
+}
+.sanjai {
+  text-align: center;
+}
+.menu {
+  border: none;
+  font-size: 23px;
+}
+.back {
+  float: right;
+  position: relative;
+  right: -200px;
+  border: none;
+}
+.m {
+  border: none;
+}
+@media only screen and (min-width: 700px) {
+  .menubut {
+    display: none;
+  }
+  .back {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .li {
+    display: none;
+  }
+  .header ul {
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style-type: none;
+
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0px;
+    width: 300px;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: white;
+    transition: 0.3s;
+  }
+
+  .header ul li {
+    margin-top: 30px;
+  }
+  .hedercontent {
+    padding-left: 7%;
+    padding-top: 40%;
+    background-image: url("./homebackround.image.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .shell {
+    height: 350px;
+    width: 300px;
+    background-color: rgb(226, 224, 224);
+    box-shadow: 5px 5px 15px rgb(126, 120, 120, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .free {
+    margin: 10px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 300px;
+    padding-left: 20px;
+    float: left;
+    background-image: url("./buy1get1\ image.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  .t {
+    background-image: url("./shoping\ images.jpg");
+  }
+  .banerelements {
+    margin-left: 10px;
+  }
+  .header {
+    padding: 10px 20px;
+  }
+}
